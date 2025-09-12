@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Restaurante</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Hero</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">reservas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-container"><img
+            src="https://media.revistaad.es/photos/615d6d38efa4b6eecac2f122/16:9/w_2560%2Cc_limit/JRZ01490.jpg"
+            alt="Imagen de fondo" class="hero-image">
+        <div class="overlay"></div>
+        <div class="title-overlay">
+            <h1>Bienvenidos</h1>
+            <p>Proximamente restaurante</p>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.sC0tO6TT_WhBjX2KuM9G4gHaEe?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">macarrones</h5>
+                        <p class="card-text">el macarrón es un tipo de galleta tradicional francesa</p>
+                        <a href="#" class="btn btn-primary">comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://img.freepik.com/vector-gratis/plantilla-menu-restaurante-colorido-rosa_23-2148386181.jpg"
+                        class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">carta</h5>
+                        <p class="card-text">contamos con una amplia carta vegana </p>
+                        <a href="#" class="btn btn-primary">comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://media.vogue.mx/photos/5ede546009f766262480ae01/master/w_2880%2cc_limit/Cafe%CC%81-rosa--pink-latte--en-taza.jpg"
+                        class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">cafes</h5>
+                        <p class="card-text">betabel aporta un color rosa vibrante y un tono diferente.</p>
+                        <a href="#" class="btn btn-primary">comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="reservations" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Reserva tu Mesa</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <form class="p-4 shadow-sm rounded bg-white">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="date" class="form-label">Fecha</label>
+                                <input type="date" class="form-control" id="date" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="time" class="form-label">Hora</label>
+                                <input type="time" class="form-control" id="time" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="guests" class="form-label">Número de comensales</label>
+                            <select class="form-select" id="guests" required>
+                                <option value="1">1 persona</option>
+                                <option value="2" selected>2 personas</option>
+                                <option value="3">3 personas</option>
+                                <option value="4">4 personas</option>
+                                <option value="5">5 personas</option>
+                                <option value="6">6 personas</option>
+                                <option value="7">7+ personas (mesa grande)</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="requests" class="form-label">Peticiones especiales</label>
+                            <textarea class="form-control" id="requests" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Reservar ahora</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>=
+        <div id="footer" class="container">
+            <div class="row">
+                <div class="col">
+                    <h5>Redes sociales
+                        <p>facebook</p>
+                        <p>instagram</p>
+                        <p>whatsapp</p>
+                    </h5>
+                </div>
+
+                
+                <div class="col">
+                    <h5>dirección</h5>
+                    <p>radal 1227, quinta normal</p>
+
+                </div>
+
+                <div class="col">
+                    <h5>horario</h5>
+                    <p>lunes a viernes</p>
+                    <p>09:00am a 10:00pm
+                
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
